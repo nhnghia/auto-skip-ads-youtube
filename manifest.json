@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Skip",  
+    "description": "Auto skip Youtube Ads",  
+    "author": "nhnghia",
+    "homepage_url": "https://github.com/nhnghia/auto-skip-ads-youtube/",
+    "version": "1.0",    
+
+    "content_scripts": [
+		{
+		 "matches": ["https://*.youtube.com/*"],
+		 "js": ["inject.js"]
+		}
+	]
+}
